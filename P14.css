@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    background-image: url(B13.gif);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+nav{
+    
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 30px rgb(36, 231, 111);
+    background: black;
+    
+}
+h2{
+    color: rgb(36, 231, 111);
+    font-size: 20px;
+}
+h3{
+    color: rgb(221, 17, 17);
+    font-size: 20px;
+}
+p{
+    color: rgb(221, 17, 17);
+    font-size: 14px;
+   
+}
+p{
+    border: none;
+    background: rgb(39, 38, 38);
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgb(36, 231, 111);
+    transition: transform .4s ;
+    cursor: pointer;
+
+}
+.main{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}  
+.right{
+    margin: 0;
+ padding: 10px 100px;
+ transition: transform .7s ;
+}
+.left{
+    width: 700vw;
+}
+.card{
+    border-radius: 50px;
+}
+.right:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 80px;
+}
+li{
+    padding: 0 50px 5px;
+}
+audio{
+    display: none;
+}
+nav, ul{
+    display: flex;
+    flex-direction: row;
+}
+.logo img{
+    margin: 0;
+padding: 0px ;
+width: 100px;
+transition: transform .9s ;
+border-radius: 20px;
+}
+.logo img:hover{
+    transform: scale(1.2);
+    border-radius: 30px;
+}
+button{
+    background: transparent;
+    border: none;
+    color:rgb(36, 231, 111);
+    font-size: 35px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    display: none;
+}
+
+p:hover{
+    transform: scale(1.2);
+    color: rgb(36, 231, 111);
+}
+
+.logo{
+    background: rgb(0, 0, 0);
+    padding: 5px 0px 0px;
+   
+}
+button:focus ~ ul{
+    height: 250px;
+}
+ @media (max-width:700px) {
+    nav, ul{
+        flex-direction: column;
+        align-items: unset;
+    }
+    ul{
+        text-align: center;
+        padding-top: 20px ;
+        height: 0;
+    }
+    nav{
+        padding-top: 10px;
+        border-radius: 0px 0px 40px 40px;
+    }
+    .logo{
+        padding: 0;
+        margin: 0;
+        align-items: center;
+       
+    }
+    button{
+        display: flex;
+        align-items: center;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 10px 0px 20px;
+        margin: 10px;
+    }
+    .right{
+        width: 60%;
+        height: auto;
+        background: transparent;
+        padding-left: 150px;
+    }
+    h2,h3 {
+        font-size: 85%;
+    }
+   
+ }

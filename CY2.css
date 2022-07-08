@@ -1,0 +1,26 @@
+body{
+    background: black;
+    background-size: cover;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    align-items: center;
+    justify-content: center;
+    padding: 10px 350px;
+}
+a{
+    padding: 3px 280px;
+    background: red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(252, 0, 0);
+    transition: transform .9s ;
+    cursor: pointer;
+}
+a:hover{
+    background: green;
+    box-shadow: 0px 0px 10px green;
+    transform: scale(1.2);
+}
+
